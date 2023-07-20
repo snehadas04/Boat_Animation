@@ -31,3 +31,10 @@ void ship(int speed)
     floodFill(2+s,200,flagColor);
     line(0+s,260,0+s,298);
 }
+
+void river(int color){
+    setcolor(boatColor);
+    setFillStyle(SOLID_FILL,color);
+    rectangle(-10,360,710,640);
+    floodFill(300,500,boatColor);
+}
