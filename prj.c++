@@ -9,7 +9,7 @@ void ship(int speed)
     int s = speed;
     setFillStyle(SOLID_FILL,boatColor);
     for(int i=0;i<3;i++){
-        int points[10]={-150+i+s,300-i,150-i+s,300};
+        int points[10]={};
         drawpoly(5,points);
     }
     floodFill(0+s,350,boatColor);
@@ -23,4 +23,11 @@ void ship(int speed)
     floodFill(0+s,337,circleColor);
     floodFill(-70+s,337,circleColor);
     floodFill(70+s,337,circleColor);
+
+    setColor(flagColor);
+    int flagPoint[8]={};
+    drawpoly(4,flagPoint);
+    setFillStyle(SOLID_FILL,flagColor);
+    floodFill(2+s,200,flagColor);
+    line(0+s,260,0+s,298);
 }
