@@ -13,4 +13,14 @@ void ship(int speed)
         drawpoly(5,points);
     }
     floodFill(0+s,350,boatColor);
+
+    setColor(circleColor);
+        circle(0+s,337,20);
+        circle(-70+s,337,20);
+        circle(70+s,337,20);
+
+    setFillStyle(SOLID_FILL,circleColor);
+    floodFill(0+s,337,circleColor);
+    floodFill(-70+s,337,circleColor);
+    floodFill(70+s,337,circleColor);
 }
