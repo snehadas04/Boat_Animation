@@ -38,3 +38,12 @@ void river(int color){
     rectangle(-10,360,710,640);
     floodFill(300,500,boatColor);
 }
+
+int main(){
+    inItWindow(700,600,"Boat",150,50);
+    int page = 0;
+    int n = 0;
+    boatColor = 4;
+    circleColor=11;
+    flagColor=11;
+}
