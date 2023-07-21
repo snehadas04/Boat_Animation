@@ -58,5 +58,7 @@ int main(){
         page = 1-page;
         n++;
     }
+    getch();
+    closegraph();
     
 }
