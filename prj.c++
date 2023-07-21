@@ -46,4 +46,12 @@ int main(){
     boatColor = 4;
     circleColor=11;
     flagColor=11;
+
+    while (n<850)
+    {
+        setActivePage(page);
+        setVisualPage(1-page);
+        cleardevice();
+    }
+    
 }
