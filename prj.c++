@@ -52,6 +52,11 @@ int main(){
         setActivePage(page);
         setVisualPage(1-page);
         cleardevice();
+        ship(n);
+        river(9);
+        delay(20);
+        page = 1-page;
+        n++;
     }
     
 }
