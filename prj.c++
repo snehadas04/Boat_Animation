@@ -1,3 +1,4 @@
+#include<iostream>
 #include<graphics.h>
 
 int boatColor;
